@@ -22,6 +22,8 @@
       padding: 0 5px;
       position: relative;
       cursor: pointer;
+      text-decoration: none;
+      color: #303030;
     }
     .option::after {
       content: "";

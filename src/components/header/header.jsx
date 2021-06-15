@@ -1,17 +1,24 @@
 import React from "react";
-import "./header.styles.scss";
+import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assests/crown.svg";
+import "./header.styles.scss";
 
 const Header = () => {
   return (
     <div className="header">
-      <div className="logo-container">
+      <Link className="logo-container" to="/">
         <Logo className="logo" />
-      </div>
+      </Link>
       <div className="options">
-        <span className="option">HOME</span>
-        <span className="option">SHOP</span>
-        <span className="option">SIGN IN</span>
+        <Link className="option" to="/">
+          HOME
+        </Link>
+        <Link className="option" to="/shop">
+          SHOP
+        </Link>
+        <Link className="option" to="/signin">
+          SIGN IN
+        </Link>
       </div>
     </div>
   );
