@@ -1,5 +1,5 @@
 .header {
-  height: 24px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -7,6 +7,7 @@
   font-family: "Open Sans", sans-serif;
   margin-bottom: 20px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
 
   .logo-container {
     transform: scale(1.4);
@@ -16,7 +17,9 @@
   .options {
     font-size: 21px;
     font-weight: 400;
-
+    display: flex;
+    text-decoration: none;
+    color: #303030;
     .option {
       margin: 0 10px;
       padding: 0 5px;
@@ -38,6 +41,55 @@
       background-color: #eaee08;
     }
     .option:hover::after {
+      transform: scale(1, 1);
+      transform-origin: 50% 100%;
+    }
+
+    .sign-out {
+      margin: 0 10px;
+      padding: 0 5px;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      color: #303030;
+    }
+    .sign-out::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.25rem;
+      left: 0;
+      top: 35px;
+      transform: scale(0, 1);
+      transform-origin: 50% 100%;
+      transition: transform 0.1s ease;
+      background-color: #eaee08;
+    }
+    .sign-out:hover::after {
+      transform: scale(1, 1);
+      transform-origin: 50% 100%;
+    }
+    .sign-in {
+      margin: 0 10px;
+      padding: 0 5px;
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      color: #303030;
+    }
+    .sign-in::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0.25rem;
+      left: 0;
+      top: 35px;
+      transform: scale(0, 1);
+      transform-origin: 50% 100%;
+      transition: transform 0.1s ease;
+      background-color: #eaee08;
+    }
+    .sign-in:hover::after {
       transform: scale(1, 1);
       transform-origin: 50% 100%;
     }
