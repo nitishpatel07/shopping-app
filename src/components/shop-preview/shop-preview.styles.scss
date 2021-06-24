@@ -1,4 +1,4 @@
-.preview {
+.preview-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,19 +11,36 @@
     background-size: cover;
     border-radius: 25px;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    &:hover {
+  }
+  &:hover {
+    .image {
       cursor: pointer;
-      transform: scale(1.01);
       transition: transform 0.2s;
       -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      opacity: 0.85;
+    }
+    .invertedcustom-button {
+      opacity: 0.95;
     }
   }
+
   .details {
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: 101%;
     width: 100%;
-    justify-content: space-between;
     font-size: 21px;
+    .preview-footer {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .invertedcustom-button {
+    position: relative;
+    width: 70%;
+    left: 43.5px;
+    bottom: 115px;
   }
 }

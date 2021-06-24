@@ -9,6 +9,16 @@
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   margin: 0 auto;
 
+  .header-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cart {
+      transform: scale(1.5);
+      margin: 0 10px;
+      padding: 0 5px;
+    }
+  }
   .logo-container {
     transform: scale(1.4);
     cursor: pointer;

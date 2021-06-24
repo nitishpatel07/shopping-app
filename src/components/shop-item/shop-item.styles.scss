@@ -1,4 +1,11 @@
 .shop-preview {
   padding: 40px 80px;
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  .preview-box {
+    display: flex;
+    justify-content: space-between;
+  }
 }
