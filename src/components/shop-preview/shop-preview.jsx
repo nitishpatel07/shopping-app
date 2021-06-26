@@ -3,7 +3,7 @@ import "./shop-preview.styles.scss";
 import CustomButton from "../custom-button/custom-button";
 
 import { connect } from "react-redux";
-import { addItem } from "../../redux/cart/cart.action";
+import { addItemToCart } from "../../redux/cart/cart.action";
 
 const ShopPreview = ({ item, addItem }) => {
   const { id, name, imageUrl, price } = item;
@@ -24,6 +24,6 @@ const ShopPreview = ({ item, addItem }) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  addItem: (user) => dispatch(addItem(user)),
+  addItem: (user) => dispatch(addItemToCart(user)),
 });
 export default connect(null, mapDispatchToProps)(ShopPreview);

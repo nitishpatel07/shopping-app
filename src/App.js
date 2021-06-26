@@ -6,6 +6,7 @@ import HomePage from "./pages/homepage/homepage";
 import Header from "./components/header/header";
 import ShopPage from "./pages/shoppage/shoppage";
 import SignInAndSignUp from "./pages/signin-and-signuppage/signin-and-signuppage";
+import CheckOutPage from "./components/checkout-page/checkout-page";
 import "./App.scss";
 import {
   auth,
@@ -80,6 +81,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckOutPage} />
           <Route
             exact
             path="/signin"
