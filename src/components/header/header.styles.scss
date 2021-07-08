@@ -1,12 +1,12 @@
 .header {
-  height: 80px;
+  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 27px 60px;
+  padding: 2.7rem 6rem;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: 20px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
   margin: 0 auto;
 
   .header-box {
@@ -15,8 +15,8 @@
     justify-content: center;
     .cart {
       transform: scale(1.5);
-      margin: 0 10px;
-      padding: 0 5px;
+      margin: 0 1rem;
+      padding: 0 0.5rem;
     }
   }
   .logo-container {
@@ -25,14 +25,14 @@
   }
 
   .options {
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 400;
     display: flex;
     text-decoration: none;
     color: #303030;
     .option {
-      margin: 0 10px;
-      padding: 0 5px;
+      margin: 0 1rem;
+      padding: 0 0.5rem;
       position: relative;
       cursor: pointer;
       text-decoration: none;
@@ -44,7 +44,7 @@
       width: 100%;
       height: 0.25rem;
       left: 0;
-      top: 35px;
+      top: 3.5rem;
       transform: scale(0, 1);
       transform-origin: 50% 100%;
       transition: transform 0.1s ease;
@@ -56,8 +56,8 @@
     }
 
     .sign-out {
-      margin: 0 10px;
-      padding: 0 5px;
+      margin: 0 1rem;
+      padding: 0 0.5rem;
       position: relative;
       cursor: pointer;
       text-decoration: none;
@@ -69,7 +69,7 @@
       width: 100%;
       height: 0.25rem;
       left: 0;
-      top: 35px;
+      top: 3.5rem;
       transform: scale(0, 1);
       transform-origin: 50% 100%;
       transition: transform 0.1s ease;
@@ -80,8 +80,9 @@
       transform-origin: 50% 100%;
     }
     .sign-in {
-      margin: 0 10px;
-      padding: 0 5px;
+      font-size: 2.1rem;
+      margin: 0 1rem;
+      padding: 0 0.5rem;
       position: relative;
       cursor: pointer;
       text-decoration: none;
@@ -93,7 +94,7 @@
       width: 100%;
       height: 0.25rem;
       left: 0;
-      top: 35px;
+      top: 3.5rem;
       transform: scale(0, 1);
       transform-origin: 50% 100%;
       transition: transform 0.1s ease;
@@ -102,6 +103,33 @@
     .sign-in:hover::after {
       transform: scale(1, 1);
       transform-origin: 50% 100%;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    .logo-container {
+      transform: scale(0.8);
+    }
+    .options {
+      font-size: 2.5rem;
+      .option {
+        margin: 0 0.5rem;
+      }
+
+      .sign-out {
+        margin: 0 0.5rem;
+      }
+
+      .sign-in {
+        font-size: 2.4rem;
+        margin: 0 1rem;
+        padding: 0 0.5rem;
+      }
     }
   }
 }

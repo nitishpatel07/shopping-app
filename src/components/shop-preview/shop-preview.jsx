@@ -9,16 +9,14 @@ const ShopPreview = ({ item, addItem }) => {
   const { id, name, imageUrl, price } = item;
   return (
     <div className="preview-item">
-      <div className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
-      <div className="details">
-        <div className="preview-footer">
-          <span className="name">{name}</span>
-          <span className="price">${price}</span>
-        </div>
-        <CustomButton onClick={() => addItem(item)} inverted>
-          ADD TO CART
-        </CustomButton>
+      <img className="image" style={{ backgroundImage: `url(${imageUrl})` }} />
+      <div className="preview-footer">
+        <span className="name">{name}</span>
+        <span className="price">${price}</span>
       </div>
+      <CustomButton onClick={() => addItem(item)} inverted>
+        ADD TO CART
+      </CustomButton>
     </div>
   );
 };

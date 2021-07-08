@@ -3,6 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 40px 80px;
+  padding: 4rem 8rem;
   font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 640px) {
+  .directory-menu {
+    padding: 3rem 1rem;
+  }
 }

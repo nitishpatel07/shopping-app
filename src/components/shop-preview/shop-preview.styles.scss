@@ -3,20 +3,20 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-
+  flex-direction: column;
   .image {
-    height: 350px;
-    width: 290px;
+    height: 35rem;
+    width: 29rem;
     background-position: center;
     background-size: cover;
-    border-radius: 25px;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 2.5rem;
+    -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
   }
   &:hover {
     .image {
       cursor: pointer;
       transition: transform 0.2s;
-      -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+      -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
       opacity: 0.85;
     }
     .invertedcustom-button {
@@ -24,23 +24,45 @@
     }
   }
 
-  .details {
+  .preview-footer {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 101%;
+    font-size: 2.5rem;
+    justify-content: space-between;
     width: 100%;
-    font-size: 21px;
-    .preview-footer {
-      display: flex;
-      justify-content: space-between;
-    }
   }
 
   .invertedcustom-button {
-    position: relative;
+    position: absolute;
     width: 70%;
-    left: 43.5px;
-    bottom: 115px;
+    left: 4.35rem;
+    bottom: 7rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .preview-item {
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    .image {
+      height: 32rem;
+      width: 25rem;
+      border-radius: 1.5rem;
+      position: relative;
+    }
+    .preview-footer {
+      display: flex;
+      font-size: 2.5rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .invertedcustom-button {
+      position: absolute;
+      width: 78%;
+      left: 2.8rem;
+      bottom: 6.5rem;
+      opacity: 0.8;
+    }
   }
 }

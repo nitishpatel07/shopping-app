@@ -59,7 +59,7 @@ class SignIn extends React.Component {
           <div className="buttons">
             <CustomButton type="submit">sign in</CustomButton>
             <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
-              sign in with google
+              google sign in
             </CustomButton>
           </div>
         </form>

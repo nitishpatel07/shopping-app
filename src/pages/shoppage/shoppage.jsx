@@ -1,5 +1,4 @@
 import React from "react";
-import "./shoppage.styles.scss";
 import ShopItem from "../../components/shop-item/shop-item";
 import SHOP_DATA from "./shop.data";
 

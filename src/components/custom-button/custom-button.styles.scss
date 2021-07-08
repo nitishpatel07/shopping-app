@@ -1,11 +1,10 @@
 .custom-button {
-  min-width: 165px;
-  width: auto;
-  height: 50px;
-  letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  min-width: 16.5rem;
+  height: 5rem;
+  letter-spacing: 0.05rem;
+  line-height: 5rem;
+  padding: 0 3.5rem 0 3.5rem;
+  font-size: 1.5rem;
   background-color: black;
   color: white;
   text-transform: uppercase;
@@ -13,24 +12,24 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
-  font-size: 17px;
+  border-radius: 5rem;
+  font-size: 1.7rem;
 
   &:hover {
     background-color: white;
     color: black;
-    border: 1px solid black;
+    border: 0.1rem solid black;
   }
 }
 
 .google-sign-incustom-button {
-  min-width: 165px;
+  min-width: 16.5rem;
   width: auto;
-  height: 50px;
-  letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  height: 5rem;
+  letter-spacing: 0.05rem;
+  line-height: 5rem;
+  padding: 0 3.5rem 0 3.5rem;
+  font-size: 1.5rem;
   background-color: rgb(0, 81, 255);
   color: white;
   text-transform: uppercase;
@@ -38,8 +37,8 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
-  font-size: 17px;
+  border-radius: 5rem;
+  font-size: 1.7rem;
 
   &:hover {
     background-color: rgb(1, 1, 224);
@@ -48,13 +47,13 @@
 }
 
 .invertedcustom-button {
-  min-width: 165px;
+  min-width: 16.5rem;
   width: auto;
-  height: 50px;
-  letter-spacing: 0.5px;
-  line-height: 50px;
-  padding: 0 35px 0 35px;
-  font-size: 15px;
+  height: 5rem;
+  letter-spacing: 0.05rem;
+  line-height: 5rem;
+  padding: 0 3.5rem 0 3.5rem;
+  font-size: 1.5rem;
   background-color: white;
   color: black;
   text-transform: uppercase;
@@ -62,8 +61,8 @@
   font-weight: bolder;
   border: none;
   cursor: pointer;
-  border-radius: 50px;
-  font-size: 17px;
+  border-radius: 5rem;
+  font-size: 1.7rem;
   opacity: 0;
 
   &:hover {
@@ -71,5 +70,11 @@
     color: white;
     border: none;
     opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .custom-button {
+    min-width: 22rem;
   }
 }

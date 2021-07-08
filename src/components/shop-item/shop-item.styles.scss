@@ -1,11 +1,26 @@
 .shop-preview {
-  padding: 40px 80px;
+  padding: 4rem 8rem;
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
-
+  height: 55rem;
+  .title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.5rem;
+  }
   .preview-box {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-preview {
+    padding: 1rem 3rem;
+    height: 47.5rem;
+    .preview-box {
+      display: flex;
+      overflow: scroll;
+    }
   }
 }

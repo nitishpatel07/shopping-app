@@ -1,17 +1,17 @@
 .menu-item {
   min-width: 25%;
-  height: 240px;
+  height: 24rem;
   display: flex;
   flex: 1 1 auto;
   align-items: center;
   justify-content: center;
-  border-radius: 25px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  margin: 0 25px 50px;
+  border-radius: 2.5rem;
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+  margin: 0 2.5rem 5rem;
   position: relative;
   overflow: hidden;
   &.large {
-    height: 300px;
+    height: 30rem;
   }
 
   .background-image {
@@ -23,11 +23,11 @@
 
   .content {
     height: auto;
-    padding: 0 25px;
+    padding: 0 2.5rem;
     display: flex;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 25px;
+    border: 0.1rem solid black;
+    border-radius: 2.5rem;
     flex-direction: column;
     position: absolute;
     top: 50%;
@@ -36,7 +36,7 @@
     background-color: rgba(255, 255, 255, 0.75);
     color: #303030;
     .title {
-      font-size: 26px;
+      font-size: 2.6rem;
     }
     .title::after {
       content: "";
@@ -44,7 +44,7 @@
       width: 75%;
       height: 0.5rem;
       left: 12.5%;
-      top: 42.5px;
+      top: 4.25rem;
       transform: scale(0, 1);
       transform-origin: 100% 0%;
       transition: transform 0.2s ease;
@@ -56,17 +56,46 @@
       transform-origin: 0% 100%;
     }
     .subtitle {
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;
       margin-bottom: 0.77em;
-      margin-top: -12.5px;
+      margin-top: -1.25rem;
     }
   }
 }
-
 .menu-item:hover {
   cursor: pointer;
   transform: scale(1.01);
   transition: transform 0.2s;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 640px) {
+  .menu-item {
+    min-width: 90%;
+    height: 25rem;
+    display: flex;
+    border-radius: 1.5rem;
+    margin: 0 1.5rem 3rem;
+    &.large {
+      height: 25rem;
+    }
+
+    .content {
+      height: 50%;
+      width: 50%;
+      padding: auto;
+
+      .title {
+        font-size: 4rem;
+        margin-top: 1.25rem;
+      }
+      .subtitle {
+        font-size: 2.75rem;
+        font-weight: 400;
+        margin-bottom: 0rem;
+        margin-top: -2.75rem;
+      }
+    }
+  }
 }

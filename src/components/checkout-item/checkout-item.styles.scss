@@ -1,15 +1,15 @@
 .checkout-item {
   width: 100%;
   display: flex;
-  min-height: 100px;
-  border-bottom: 1px solid darkgrey;
-  padding: 15px 0;
-  font-size: 20px;
+  min-height: 10rem;
+  border-bottom: 0.1rem solid darkgrey;
+  padding: 1.5rem 0;
+  font-size: 2rem;
   align-items: center;
 
   .image {
     width: 18%;
-    margin-right: 20px;
+    margin-right: 2rem;
 
     img {
       width: 100%;
@@ -20,7 +20,7 @@
   .quantity,
   .price {
     width: 23%;
-    padding-left: 21px;
+    padding-left: 2.1rem;
   }
 
   .quantity {
@@ -28,12 +28,26 @@
     flex-direction: row;
     .arrow {
       cursor: pointer;
-      padding: 0 10px;
+      padding: 0 1rem;
     }
   }
 
   .remove-button {
-    padding-left: 45px;
+    padding-left: 4.5rem;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 640px) {
+  .checkout-item {
+    font-size: 2.5rem;
+    .quantity,
+    .price {
+      width: 23%;
+      padding-left: 2.35rem;
+    }
+    .remove-button {
+      padding-left: 0;
+    }
   }
 }
